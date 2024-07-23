@@ -6,5 +6,6 @@ router.use(express.static("public"));
 
 router.get("/", userController.getLoginPage);
 
+router.post("/login", userController.postUserLogin);
 router.post("/signUp", userController.postUserSignup);
 module.exports = router;
